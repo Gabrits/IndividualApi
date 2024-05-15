@@ -1,0 +1,12 @@
+2024-05-14 16:23:33.014429-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "EDITORA CHARACTER VARYING(255)": "'Geoffrey BlesGeoffrey BlesGeoffrey BlesGeoffrey BlesGeoffrey BlesGeoffrey BlesG... (299)"; SQL statement:
+insert into livro (autor,data_publicacao,editora,titulo,id) values (?,?,?,?,default) [22001-224]
+2024-05-14 16:26:51.681574-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "EDITORA CHARACTER VARYING(255)": "'Geoffrey BlesCartas de um diabo a seu apredizCartas de um diabo a seu apredizCa... (269)"; SQL statement:
+insert into livro (autor,data_publicacao,editora,titulo,id) values (?,?,?,?,default) [22001-224]
+2024-05-14 16:28:38.595779-03:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "EDITORA CHARACTER VARYING(255)": "'Geoffrey BlesCartas de um diabo a seu apredizCartas de um diabo a seu apredizCa... (301)"; SQL statement:
+insert into livro (autor,data_publicacao,editora,titulo,id) values (?,?,?,?,default) [22001-224]
+2024-05-14 16:31:04.114343-03:00 jdbc[44]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "EDITORA CHARACTER VARYING(255)": "'Geoffrey BlesCartas de um diabo a seu apredizCartas de um diabo a seu apredizCa... (301)"; SQL statement:
+insert into livro (autor,data_publicacao,editora,titulo,id) values (?,?,?,?,default) [22001-224]
