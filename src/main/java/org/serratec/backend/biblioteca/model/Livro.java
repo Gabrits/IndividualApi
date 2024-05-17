@@ -23,11 +23,6 @@ public class Livro {
 	@Column(nullable = false, length = 50)
 	private String titulo;
 
-	@NotBlank(message = "Preencha o nome do autor.")
-	@Size(min = 0, max = 50, message = "O autor deve ter entre {min} e {max} digitos.")
-	@Column(nullable = false, length = 50)
-	private String autor;
-
 	@Embedded
 	private InformacaoPublicacao informacaoPublicacao;
 
@@ -45,14 +40,6 @@ public class Livro {
 
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
-	}
-
-	public String getAutor() {
-		return autor;
-	}
-
-	public void setAutor(String autor) {
-		this.autor = autor;
 	}
 
 	public InformacaoPublicacao getInformacaoPublicacao() {

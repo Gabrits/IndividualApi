@@ -1,16 +1,15 @@
 package org.serratec.backend.biblioteca.model;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 import jakarta.persistence.Embeddable;
-import jakarta.validation.constraints.Size;
 
 @Embeddable
 public class InformacaoPublicacao {
 
-	@Size(max = 50, message = "A editora pode ter apenas {max} digitos.")
 	private String editora;
-	private Date dataPublicacao;
+	private LocalDate dataPublicacao;
+	private String autor;
 
 	public String getEditora() {
 		return editora;
@@ -20,11 +19,19 @@ public class InformacaoPublicacao {
 		this.editora = editora;
 	}
 
-	public Date getDataPublicacao() {
+	public LocalDate getDataPublicacao() {
 		return dataPublicacao;
 	}
 
-	public void setDataPublicacao(Date dataPublicacao) {
+	public void setDataPublicacao(LocalDate dataPublicacao) {
 		this.dataPublicacao = dataPublicacao;
+	}
+
+	public String getAutor() {
+		return autor;
+	}
+
+	public void setAutor(String autor) {
+		this.autor = autor;
 	}
 }
